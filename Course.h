@@ -2,21 +2,20 @@
 #define COURSE_H
 
 #include <string>
-#include "Student.h"
-using namespace std;
-//#write your code here
 
+class Student; 
 
+class Course {
+private:
+    std::string courseCode;
+    std::string courseName;
+    int maxStudents;
+    Student* students;
+    int currentStatus;
 
+public:
+    void addStudent(const Student& s);
+    void displayInfo();
+};
 
-
-
-
-
-
-
-
-
-
-
-#endif
+#endif // COURSE_H
