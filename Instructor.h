@@ -12,14 +12,14 @@ private:
 public:
     Instructor() : department(""), experienceYears(0) {}
     Instructor(string name, int id, string department, int experienceYears)
-    : Person(std::move(name), id),
-      department(std::move(department)),
+    : Person(move(name), id),
+      department(move(department)),
       experienceYears(experienceYears) {}
 
     const string& getDepartment() const { return department; }
     int getExperienceYears() const { return experienceYears; }
 
-    void setDepartment(string d) { department = std::move(d); }
+    void setDepartment(string d) { department = move(d); }
     void setExperienceYears(int y) { experienceYears = y; }
 
     void display();
