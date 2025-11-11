@@ -25,5 +25,5 @@ public:
     void display();
 };
 
-#endif // INSTRUCTOR_H
+#endif 
 
