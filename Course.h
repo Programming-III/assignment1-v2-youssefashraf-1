@@ -18,4 +18,4 @@ public:
     void displayInfo();
 };
 
-#endif // COURSE_H
+#endif
